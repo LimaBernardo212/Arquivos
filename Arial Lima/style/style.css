@@ -140,17 +140,18 @@ article > p > a:hover{
 }
 h4{
     font-family: var(--fontTitle);
-    margin:40px 170px;
+    margin:20px 30px 20px 30px;
+    display: inline;
 }
 img{
-    display: inline;
+    display: inline-block;
 }
 div.areia{
+    display: inline;
     position: relative;
     top: 50px;
-    display: inline;
-    background-color: rgb(255, 255, 255);
     padding: 40px;
     margin: 100px;
+    background-color: white;
 }
 
