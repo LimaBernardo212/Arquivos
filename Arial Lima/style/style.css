@@ -3,7 +3,7 @@
 :root{
     --cor01:#f2bb16e0;
     --cor02:#f2a71d;
-    --cor03:#f29727;
+    --cor03:#f29727c2;
     --cor04:#733702;
     --cor05:#260401;
     --fontNormal:'Roboto', 'Arial';
@@ -30,18 +30,25 @@ nav{
     display: inline;
     margin-left: 50px;
 }
-a{
+header > nav >a{
     text-decoration: none;
     font-family: var(--fontTitle);
     margin-right: 15px;
     color: var(--cor04);
 }
-a:hover{
+header > nav >a:hover{
     text-decoration: underline;
     color: var(--cor05);
     padding: 10px;
     border-radius: 5px;
     
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    margin: 0px 15px;
 }
 main > div{
     background-color: var(--cor02);
@@ -87,7 +94,7 @@ h3{
     color: var(--cor04);
 }
 #link{
-    margin-left: 50px;
+    margin-left: 150px;
     font-size: 1.5em;
     color: #f2a71db6;
     font-family: var(--fontTitle);
@@ -99,37 +106,51 @@ h3{
 p{
     text-indent: 70px;
     font-family: var(--fontNormal);
-    margin:auto;
+    margin-left: 50px;
+    margin-right: 50px;
     min-width: 200px;
     max-width: 700px;
     text-align: justify;
     font-size: 1.5em;
 }
+strong#aviso{
+    color: red;
+    font-family: var(--fontTitle);
+    font-size: 0.8em;
+    margin-left: 20px;
+}
+strong{
+    color:#f29727e7;
+    font-weight: bolder;
+}
+article > p > a{
+    font-family: var(--fontTitle);
+    margin-left: 0px;
+    color: var(--cor04);
+    font-weight: 600;
+}
+article > p > a:hover{
+    margin-left: 0px;
+}
 #materiais{
-    background-color:#73370227;
+    position: relative;
+    background-color: var(--cor03);
     background-image: none;
-    height: auto;
-    
+    height: 300px;
 }
-#materiais > article{
-    background-color: white;
-    border-radius: 15px;
-    max-width: 750px;
-    min-width: 125px;
-    padding: 20px;
-    margin-top: 30px;
+h4{
+    font-family: var(--fontTitle);
+    margin:40px 170px;
 }
-#materiais > article > p{
-    margin-left: 30px;
+img{
+    display: inline;
 }
-#materiais > article > img{
-    float: left;
-    margin-right: 30px;
+div.areia{
+    position: relative;
+    top: 50px;
+    display: inline;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    margin: 100px;
 }
-#materiais > h3.grosso{
-    margin-top: 20px;
-} 
-img.giga{
-    width: 250px;
-    height: 250px;
-}
+
