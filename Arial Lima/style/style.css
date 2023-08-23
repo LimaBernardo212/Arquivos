@@ -18,13 +18,16 @@ header{
 header >img{
     width: 63px;
     height: 63px;
-    border-radius:50% ;
+    border-radius:50%;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.356);
+
 }
 em#especial{
     font-size: 2em;
     font-family: var(--fontEspecial),'Arial', sans-serif;
     color: var(--cor05);
+    margin-top: -10px;
+    
 }
 nav{
     display: inline;
@@ -58,7 +61,7 @@ main > div{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: local;
+    background-attachment: fixed;
 
 }
 main > div > h1{
@@ -81,7 +84,7 @@ h2{
     font-family: var(--fontTitle);
     font-weight: bold;
     font-style: italic;
-    margin-left: 150px;
+    margin-left: 50px;
     max-width: 600px;
     min-width: 3px;
     padding: 10px;
@@ -90,7 +93,7 @@ h3{
     margin-top: -80px;
     font-family: var(--fontTitle);
     font-size: 2em;
-    margin-left: 150px;
+    margin-left: 110px;
     color: var(--cor04);
 }
 #link{
@@ -120,7 +123,7 @@ strong#aviso{
     margin-left: 20px;
 }
 strong{
-    color:#f29727e7;
+    color:#6b4311e7;
     font-weight: bolder;
 }
 article > p > a{
@@ -132,26 +135,19 @@ article > p > a{
 article > p > a:hover{
     margin-left: 0px;
 }
-#materiais{
-    position: relative;
-    background-color: var(--cor03);
+div#materiais{
     background-image: none;
-    height: 300px;
+    background-color: transparent;
 }
-h4{
-    font-family: var(--fontTitle);
-    margin:20px 30px 20px 30px;
-    display: inline;
+.grosso{
+    margin-top: 50px;
 }
-img{
-    display: inline-block;
+img#bu{
+    margin-left: 50px;
+    border-radius: 10px;
+    margin-bottom: 40px;
 }
-div.areia{
-    display: inline;
-    position: relative;
-    top: 50px;
-    padding: 40px;
-    margin: 100px;
-    background-color: white;
-}
+
+
+
 
