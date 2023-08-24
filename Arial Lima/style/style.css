@@ -27,22 +27,21 @@ em#especial{
     font-size: 2em;
     font-family: var(--fontEspecial),'Arial', sans-serif;
     color: var(--cor05);
-    margin-top: -10px;
-    
+    margin-right: 60px;
 }
 nav{
-    display: block;
-    margin-left: 15px;
+    display: inline;
+    margin-left: 50px;
     margin-top: 10px;
     max-width: 600px;
     min-width: 200px;
 }
-header > nav >a{
+header > nav > a{
     text-decoration: none;
     font-family: var(--fontTitle);
     margin-right: 30px;
     color: var(--cor04);
-    transition-duration: 10s;
+    transition-duration: 1s;
 }
 header > nav >a:hover{
     text-decoration: underline;
@@ -101,15 +100,17 @@ h3{
     margin-left: 110px;
     color: var(--cor04);
 }
-#link{
+.link{
     margin-left: 100px;
-    font-size: 1.5em;
+    font-size: 2em;
     color: #f2a71db6;
-    font-family: var(--fontTitle);
+    font-family: var(--fontEspecial);
     padding: 10px;
+    font-weight: bold;
 }
-#link:hover{
+.link:hover{
     background-color: #f2a71d18;
+    margin-left: 160px;
 }
 p{
     text-indent: 70px;
@@ -155,6 +156,11 @@ img#bu{
 }
 div{
     background-color: var(--cor01);
+}
+#topper{
+    margin-top: 920px;
+    max-width: 1000px;
+    min-width: 300px;
 }
 
 
