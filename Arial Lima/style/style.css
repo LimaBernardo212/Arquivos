@@ -156,12 +156,32 @@ img#bu{
 }
 div{
     background-color: var(--cor01);
+    background-image: none;
 }
 #topper{
     margin-top: 920px;
     max-width: 1000px;
     min-width: 300px;
 }
-
+div.materiais{
+    display: inline;
+    background-color: var(--cor01);
+    width: 350px;
+}
+.materiais > p{
+    max-width: 350px;
+    min-width: 100px;
+    margin-left: 100px;
+}
+.materiais > p > em{
+    font-size: 3em;
+    font-weight: bold;
+}
+h4{
+    font-family: var(--fontEspecial);
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 150px;
+}
 
 
