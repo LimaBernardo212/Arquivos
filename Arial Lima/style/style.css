@@ -92,6 +92,7 @@ h2{
     max-width: 600px;
     min-width: 3px;
     padding: 10px;
+    margin-bottom: 80px;
 }
 h3{
     margin-top: -80px;
@@ -99,18 +100,21 @@ h3{
     font-size: 2em;
     margin-left: 110px;
     color: var(--cor04);
+    margin-bottom: 40px;
 }
 .link{
-    margin-left: 100px;
+    
+    margin-left: 60px;
     font-size: 2em;
     color: #f2a71db6;
     font-family: var(--fontEspecial);
     padding: 10px;
     font-weight: bold;
+    
 }
 .link:hover{
     background-color: #f2a71d18;
-    margin-left: 160px;
+    margin-left: 140px;
 }
 p{
     text-indent: 70px;
@@ -121,6 +125,7 @@ p{
     max-width: 700px;
     text-align: justify;
     font-size: 1.5em;
+    margin-bottom: 100px;
 }
 strong#aviso{
     color: red;
@@ -145,47 +150,35 @@ div#materiais{
     background-image: none;
     background-color: transparent;
 }
-.grosso{
-    margin-top: 50px;
-}
+
 img#bu{
     margin-left: 10px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 70px;
     margin-top: 10px;
 }
 div{
-    background-color: var(--cor01);
     background-image: none;
 }
-#topper{
-    margin-top: 920px;
-    max-width: 1000px;
-    min-width: 300px;
-}
-div.materiais{
+section{
     background-color: var(--cor01);
-    background-image: none;
-    max-width: 400px;
-    min-width: 200px;
-    height: 330px;
-    margin: 20px 100px;
-    border-radius: 50px;
-    padding: 15px;
 }
-div.materiais > h4{
-    font-size: 2em;
+.sect{
+    display: inline;
     font-family: var(--fontTitle);
-    margin: 10px 100px;
+    text-indent: 0px;
+    margin-left: 10px;
+    font-size: 1.1em;
 }
-div.materiais > p > em{
-    font-size: 2em;
-    font-family: var(--fontTitle);
-    font-weight: bold;
+em{
+    font-size: 1.5em;
 }
-div.materiais > p{
-    margin-bottom: 20px;
+.aralc{
+    margin-left: 10px;
+    
 }
+
+
 
 
 
