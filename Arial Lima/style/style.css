@@ -55,6 +55,7 @@ header > nav >a:hover{
     color: var(--cor05);
     padding: 3px;
     border-radius: 5px;
+    margin: 0px 20px;
     
 }
 a{
