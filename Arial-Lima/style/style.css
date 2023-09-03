@@ -33,11 +33,11 @@ em#especial{
     font-size: 2em;
     font-family: var(--fontEspecial),'Arial', sans-serif;
     color: var(--cor05);
-    margin-right: 60px;
+    margin-right: 110px;
 }
 nav{
     display: inline-flex;
-    margin-left: 50px;
+    margin-left: 10px;
     margin-top: 10px;
     max-width: 600px;
     min-width: 200px;
@@ -210,13 +210,14 @@ a#contato{
 }
 main > section >img {
     text-align: center;
-    margin: 10px 80px;
+    margin: 10px 40px;
     padding: 30px;
     width: 150px;
     height: 150px;
 }
 #menosdez{
     margin: -10px -10px 100px -10px;
+    
 }
 footer > a{
     text-decoration: none;
@@ -227,6 +228,16 @@ footer > a{
 footer > a:hover{
     margin-left: 40px;
 }
-
-
-
+#come{
+    width: 270px;
+    
+    margin: 10px;
+}
+#vamo{
+    width: 80%;
+    height: 80%;
+    margin-left: 10px;
+}
+.alt{
+    margin: 20px;
+}
