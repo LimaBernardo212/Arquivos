@@ -241,3 +241,22 @@ footer > a:hover{
 .alt{
     margin: 20px;
 }
+.main{
+    margin:40px;
+    display: inline;
+}
+.main > picture >  img{
+    margin: 40px;
+}
+h4{
+    display: block;
+    margin:40px;
+    padding: 30px;
+    font-family: var(--fontTitle);
+    font-size: 1em;
+}
+p.united{
+    display: block;
+    font-size: 1.5em;
+    max-width: 500px;
+}
