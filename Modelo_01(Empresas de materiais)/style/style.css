@@ -18,6 +18,8 @@ body{
     
 }
 header{
+    position: sticky;
+    top: 0;
     background-color:var(--cor01);
     margin: -10px;
     min-width: 320px;
