@@ -1,5 +1,61 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Mohave:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
 :root{
-    
+   --cor_01: #8C4242;
+   --cor_02:#A66060;
+   --cor_03:#BF8080;
+   --cor_04:#D9A0A0;
+   --cor_05:#FFC8C8;
+   --fontNav:"Mohave";
+   --fontNormal:"Roboto";
+    --fontTitle:'Kaushan Script', cursive;
+    ;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*Header Initial*/
+header{
+    background-color: var(--cor_05);
+}
+header > nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:-10px -30px 10px -100px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.438);
+}
+header > nav > a > img{
+    display: flex;
+    width: 63px;
+    height: 63px;
+}
+header > nav > a{
+    display: inline-flex;
+    text-decoration: none;
+    color: var(--cor_02);
+    font-family: var(--fontTitle);
+}
+header > nav > a:hover{
+    display: inline-flex;
+    text-decoration: underline;
+    color: var(--cor_01);
+}
+/* Header finish*/
+/*Main Initial*/
+h1{
+    font-family: var(--fontTitle);
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.829);
+    margin-left: 30px;
+}
+p{
+    font-family: var(--fontNormal);
+    max-width: 500px;
+    text-align: justify;
+    margin-left: 50px;
 }
