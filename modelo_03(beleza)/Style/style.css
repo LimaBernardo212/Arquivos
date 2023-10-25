@@ -20,13 +20,15 @@ html{
 }
 /*Header Initial*/
 header{
+    position: sticky;
+    top: 0;
     background-color: var(--cor_05);
 }
 header > nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin:-10px -30px 10px -100px;
+    margin:-10px 0px 10px -100px;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.438);
 }
 header > nav > a > img{
@@ -46,8 +48,34 @@ header > nav > a:hover{
     color: var(--cor_01);
 }
 /* Header finish*/
+/*Section image Initial*/
+section#h1{
+    background-image: url('../images/beleza.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 89vh;
+    background-attachment: fixed;
+    background-position: top top;
+}
+section#h1 > h1{
+    display: flex;
+    position: relative;
+    color: rgba(255, 255, 255, 0.952);
+    font-family: var(--fontTitle);
+    font-weight: 700;
+    font-size: 2.5em;
+    top: 180px;
+}
 /*Main Initial*/
+#quemsomosnos{
+    padding: 20px;
+}
 h1{
+    font-family: var(--fontTitle);
+    font-weight: 400;
+    font-size: 2em;
+}
+h2{
     font-family: var(--fontTitle);
     font-weight: 400;
     color: rgba(0, 0, 0, 0.829);
