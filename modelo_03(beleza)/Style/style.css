@@ -101,13 +101,13 @@ p{
     font-family: var(--fontNormal);
     max-width: 500px;
     text-align: justify;
-    margin: 15px 100px 15px 70px;
+    margin: 15px 100px 15px 55px;
     font-size: 1.2em;
 }
 .lorem{
     display: inline-flex;
     flex-direction: column;
-    margin: 100px;
+    margin: 55px;
     align-items:flex-end;
     vertical-align:middle;
 }
