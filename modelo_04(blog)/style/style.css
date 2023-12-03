@@ -82,6 +82,7 @@ span > a{
     border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
+
     transition-duration: 0.5s;
  }
 span > a:hover{
@@ -93,7 +94,7 @@ main p{
    margin: 20px 5px;
    text-align: justify;
    text-indent: 1.5em;
-   line-height: 1.2em;
+   line-height: 1em;
    font-size: 1em;
 }
 strong{
