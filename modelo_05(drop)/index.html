@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBV mania 2.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vitrine</h1>
+    </header>
+    <main>
+        <article id="compras">
+            <section>
+                <img src="" alt="No image">
+                <h2>Short</h2>
+                <h3>50,00</h3>
+                <a href="#" onclick="carroa()">Adicionar ao carrinho</a>
+            </section>
+            <section>
+
+                <img src="" alt="No image">
+                <h2>Camisa</h2>
+                <h3>70,00</h3>
+                <a href="#" onclick="carrob()">Adicionar ao carrinho</a>
+            </section>
+            <section>
+                <img src="" alt="No image">
+                <h2>Arganel</h2>
+                <h3>20,00</h3>
+                <a href="#" onclick="carroc()">Adicionar ao carrinho</a>
+            </section>
+        </article>
+        <article>
+            <h2>Carrinho</h2>
+            <section id="carrinho"></section>
+        </article>
+    </main>
+</body>
+<script>
+var short_qt = 0
+var short_rs = 0
+var camisa_qt= 0
+var camisa_rs = 0
+var argo_qt = 0
+var argo_rs = 0
+
+function carroa(){
+    short_qt += 1
+    short_rs += 50.00
+    document.getElementById("carrinho").innerHTML += `<p>O(s) produto(s) são shorts ${short_qt} e ao todo valem R$${short_rs},00</p><p>__________________________________________________________________________________________________________</p>`
+    
+    
+}
+function carrob(){
+    camisa_qt += 1
+    camisa_rs += 70.00
+    document.getElementById("carrinho").innerHTML += `<p>O(s) produto(s) são camisas ${camisa_qt} e ao todo valem R$${camisa_rs},00</p><p>__________________________________________________________________________________________________________</p>`
+}
+function carroc(){
+    argo_qt += 1
+    argo_rs += 20.00
+    document.getElementById("carrinho").innerHTML += `<p>O(s) produto(s) são arganel ${argo_qt} e ao todo valem R$${argo_rs},00</p><p>__________________________________________________________________________________________________________</p>` 
+}
+</script>
+</html>
