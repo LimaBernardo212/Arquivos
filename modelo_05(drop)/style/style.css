@@ -14,10 +14,10 @@ header{
 }
 header > nav{
     display: flex;
-    justify-content:space-between;
-    align-items: center;
+    justify-content:left;
+    
     margin:-10px -10px;
-    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.438);
+    text-align: left;
     padding: 20px;
 }
 header > nav > a > img{
@@ -26,12 +26,18 @@ header > nav > a > img{
     height: 63px;
     margin-left: 70px;
     border-radius: 50%;
+    
 }
 a{
     display: inline-flex;
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-family: var(--fontTitle);
+    margin-left: 10px;
+}
+h1{
+    color: white;
+    text-align: center;
 }
 a:hover{
     display: inline-flex;
@@ -46,7 +52,6 @@ article#compras{
 section {
     display: inline;
     margin: 30px;
-    
 }
 #msg{
     border-bottom: 1px solid black;
@@ -55,6 +60,7 @@ section {
     width: 250px;
     padding: 0px 0px 15px 0px;
     background-color: rgba(245, 245, 245, 0.205);
+    box-shadow: none;
 }
 .pdt:hover{
     transform: translate(-8px, -8px);
@@ -68,4 +74,6 @@ h3{
     font-size: 0.9em;
     font-weight: normal;
 }
-
+#qt{
+    display: none;
+}
