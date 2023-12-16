@@ -11,50 +11,71 @@
 </script>
 <body>
     <header>
-        <h1>VITRINE</h1>
+        <span>
+            <h1>VITRINE</h1>
+        </span>
         <nav>
-            <img src="" alt="">
-            <span><a href="formpag.html">Home</a></span><span><a href="carrinho.html">Loja</a></span>
-            <span><a href="">Sobre</a></span>
+            <span><a href="index.html">Loja</a></span><span><a href="shorts.html">Shorts</a></span>
+            <span><a href="camisas.html">Camisas</a></span>
+            <span><a href="argo.html">Arganel</a></span>
         </nav>
     </header>
     <main>
         <article id="compras">
             <section class="pdt">
                 <img src="images/lorem img.png" alt="No image">
-                <h2>Short</h2>
+                <h2>Short 01</h2>
                 <h3>50,00</h3>
                 <p>Especificaçãoes do produto, da loja, ou descontos.</p>
                 <a href="#" onclick="carroa()">Adicionar ao carrinho</a>
-                <input type="number" name="qt" id="qt" onclick="noNaNa()">
+                <a href="#" id="cart1" onclick="removecra()">Remover do carrinho</a>
                 
                 
             </section>
             <section class="pdt">
 
                 <img src="images/lorem img.png" alt="No image">
-                <h2>Camisa</h2>
+                <h2>Camisa 01</h2>
                 <h3>70,00</h3>
                 <p>Especificaçãoes do produto, da loja, ou descontos.</p>
-                <a href="#" onclick="carrob()" class="cart">Adicionar ao carrinho</a>
+                <a href="#" onclick="carrob()">Adicionar ao carrinho</a>
+                <a href="#" id="cart2" onclick="removecrb()">Remover do carrinho</a>
             </section>
             <section class="pdt">
                 <img src="images/lorem img.png" alt="No image">
-                <h2>Arganel</h2>
+                <h2>Arganel 01</h2>
                 <h3>20,00</h3>
                 <p>Especificaçãoes do produto, da loja, ou descontos.</p>
-                <a href="#" onclick="carroc()"class="cart">Adicionar ao carrinho</a>
+                <a href="#" onclick="carroc()">Adicionar ao carrinho</a>
+                <a href="#"  id="cart3" onclick="removecrc()">Remover do carrinho</a>
             </section>
+
         </article>
         <h2>Carrinho</h2>
-        <table ><thead><tr>
-            <th>Produtos</th><th>Preço</th><th>Quantidade</th>
-        </tr></thead><tbody >
-            <tr id="carrinho1"></tr>
-            <tr id="carrinho2"></tr>
-            <tr id="carrinho3"></tr>
-        </tbody></table>
+            <article id="car">
+                <span>Produtos</span><span>Preço</span><span>Quantidade</span>
+                <br>
+                
+                <section id="carrinho1"></section>
+                <section id="carrinho2"></section>
+                <section id="carrinho3"></section>
+            </article>
+            
             
     </main>
+        <section id="vlfinal"><span>Total:R$0,00</span></section>
+        <form action="https://formsubmit.co/bernardolimarodrigues4@gmail.com" method="post" id="form">
+            <label for="end">Endereço</label>
+            <input type="text" name="end" id="endereço" placeholder="Endereço">
+            <p id="endereço">
+            </p>
+            <label for="bairro">Bairro</label>
+            <input type="text" name="bairro" id="bairro" placeholder="Bairro">
+            <label for="name">Nome</label>
+            <input type="text" name="nome" id="nome" autocomplete="off" placeholder="Nome">
+            <input type="submit" value="Enviar, e pagar.">
+
+            <input type="hidden" name="_captcha" value="false">
+        </form>
 </body>
 </html>
