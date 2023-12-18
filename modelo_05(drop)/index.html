@@ -11,9 +11,8 @@
 </script>
 <body>
     <header>
-        <span>
-            <h1>VITRINE</h1>
-        </span>
+            <h1 id="prc">VITRINE</h1>
+        
         <nav>
             <span><a href="index.html">Loja</a></span><span><a href="shorts.html">Shorts</a></span>
             <span><a href="camisas.html">Camisas</a></span>
@@ -23,31 +22,31 @@
     <main>
         <article id="compras">
             <section class="pdt">
-                <img src="images/lorem img.png" alt="No image">
-                <h2>Short 01</h2>
-                <h3>50,00</h3>
-                <p>Especificaçãoes do produto, da loja, ou descontos.</p>
-                <a href="#" onclick="carroa()">Adicionar ao carrinho</a>
-                <a href="#" id="cart1" onclick="removecra()">Remover do carrinho</a>
+                <img src="images/5linguagemdoamor.jpg" alt="No image" id="noi">
+                <h2>As 5 Linguagens do amor</h2>
+                <h3><del>R$25,00</del> R$15,00</h3>
+                <p> 1 unidade.Produto com qualidade equivalente a livros de biblioteca, escrito por Gary Chapman , o livro mostra por que só nos sentiremos realmente amados e compreendidos quando a pessoa amada nos expressar seu amor através de nossa linguagem única. </p>
+                <a href="#compras" onclick="carroa()">Adicionar ao carrinho</a>
+                <a href="#compras" id="cart1" onclick="removecra()">Remover do carrinho</a>
                 
                 
             </section>
             <section class="pdt">
 
-                <img src="images/lorem img.png" alt="No image">
-                <h2>Camisa 01</h2>
-                <h3>70,00</h3>
-                <p>Especificaçãoes do produto, da loja, ou descontos.</p>
-                <a href="#" onclick="carrob()">Adicionar ao carrinho</a>
-                <a href="#" id="cart2" onclick="removecrb()">Remover do carrinho</a>
+                <img src="images/ogangconflito.jpg" alt="No image" id="noi">
+                <h2>O grande conflito 13° edição</h2>
+                <h3>R$5,00</h3>
+                <p>4 unidades, uma delas com um texto especial.De Elen white. No grande conflito entre o bem e o mal, parece que o mal se sobresaiu. As notícias são desanimadoras - violência, fome, desemprego, doenças, acidentes e outras calamidades estão na ordem do dia. Os meios de comunicação podem lhe dizer o que está acontecendo. </p>
+                <a href="#cart1" onclick="carrob()">Adicionar ao carrinho</a>
+                <a href="#cart1" id="cart2" onclick="removecrb()">Remover do carrinho</a>
             </section>
             <section class="pdt">
-                <img src="images/lorem img.png" alt="No image">
-                <h2>Arganel 01</h2>
-                <h3>20,00</h3>
-                <p>Especificaçãoes do produto, da loja, ou descontos.</p>
-                <a href="#" onclick="carroc()">Adicionar ao carrinho</a>
-                <a href="#"  id="cart3" onclick="removecrc()">Remover do carrinho</a>
+                <img src="images/onepiecevl10.jpg" alt="No image" id="noi">
+                <h2>One Piece vol. 10</h2>
+                <h3>R$20,00</h3>
+                <p>De Eichiro Oda,Finalmente Nami deixa o orgulho de lado e pede ajuda ao Luffy!Entretanto, a luta contra o bando do Arlong não dará moleza!</p>
+                <a href="#cart2" onclick="carroc()">Adicionar ao carrinho</a>
+                <a href="#cart2"  id="cart3" onclick="removecrc()">Remover do carrinho</a>
             </section>
 
         </article>
@@ -61,21 +60,21 @@
                 <section id="carrinho3"></section>
             </article>
             
-            
+            <section id="vlfinal">Total:R$0,00</section>
     </main>
-        <section id="vlfinal"><span>Total:R$0,00</span></section>
+        
         <form action="https://formsubmit.co/bernardolimarodrigues4@gmail.com" method="post" id="form">
             <label for="end">Endereço</label>
-            <input type="text" name="end" id="endereço" placeholder="Endereço">
+            <input type="text" name="endereço" id="endereço" placeholder="Endereço">
             <p id="endereço">
             </p>
             <label for="bairro">Bairro</label>
-            <input type="text" name="bairro" id="bairro" placeholder="Bairro">
+            <input type="text" name="bairro" id="bairro" placeholder="Bairro" onclick="verificar1()">
             <label for="name">Nome</label>
-            <input type="text" name="nome" id="nome" autocomplete="off" placeholder="Nome">
-            <input type="submit" value="Enviar, e pagar.">
-
+            <input type="text" name="nome" id="nome" autocomplete="off" placeholder="Nome" onclick="verificar2()">
+            <button type="menu" onmousedown="verificar3()">Enviar pedido</button>
             <input type="hidden" name="_captcha" value="false">
         </form>
+        <button type="button" id="button">Finalizar compra(s)</button>
 </body>
-</html>
+</html>                                                                                                                                                                                                       

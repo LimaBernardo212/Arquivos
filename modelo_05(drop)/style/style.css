@@ -11,6 +11,7 @@ header{
     background-image: linear-gradient(45deg,#372991ab,#1e1750a2);
     margin: -10px;
     padding: 10px;
+    text-align: center;
 }
 header > nav{
     display: flex;
@@ -52,11 +53,16 @@ section {
     display: inline;
     margin: 30px;
 }
+#noi{
+    width: 100%;
+    height: 60%;
+}
 #msg{
     border-bottom: 1px solid black;
 }
 .pdt{
-    width: 250px;
+    max-width: 250px;
+    min-width: 120px;
     padding: 0px 20px 15px 15px;
     background-color: rgba(245, 245, 245, 0.205);
     box-shadow: none;
@@ -82,43 +88,47 @@ img#principal{
     border-radius: 50%;
 }
 span{
-    margin-left: 30px;
+    display: inline-flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: 20px ;
 }
 #cart1{
     display: none;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 #cart2{
     display: none;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 #cart3{
     display: none;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 article#car{
     background-color: rgba(55, 41, 145, 0.2);
-    max-width: 100vw;
-    margin-top: 50px;
+    max-width: 70vw;
     padding: 10px;
-    font-size: 20px;
+    font-size: 18px;
+    margin: 20px  auto;
+    min-width: 200px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.089);
     border-right: 2px solid rgba(0, 0, 0, 0.089);
     border-radius: 7px;
-    margin-left: 10px;
 }
 section{
     font-size: 1em;
     background-color: rgba(245, 245, 245, 0.548);
-    width: 500px;
+    max-width: 450px;
+    min-width: 150px;
     border-radius: 5px;
 }
 form {
     background-color: rgba(55, 41, 145, 0.2);
     padding: 15px;
     border-radius: 10px;
-    margin: auto;
-    width: 50%;
+    margin-top: 20px;
+    width: 96%;
 }
 
 form label {
@@ -214,4 +224,12 @@ input[type=radio] + label, input[type=checkbox] + label {
     background-color: rgba(55, 41, 145, 0.2);
     border-radius: 5px;
     border: 2.5px  solid #37299142;
+    margin-left: 20px;
+}
+strong{
+    color: rgba(255, 0, 0, 0.747);
+    font-size: 0.8em;
+}
+#button{
+    width: 97%;
 }
