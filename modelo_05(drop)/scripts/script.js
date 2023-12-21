@@ -4,16 +4,22 @@ var camisa_qt = 0
 var camisa_rs = 0
 var argo_qt = 0
 var argo_rs = 0
-var totalpag = 0
-var click = 0
 
+var click = 0
+var deus_qt = 0
+var deus_rs = 0
+var alfa_qt = 0
+var alfa_rs = 0
+var gusto_rs = 0
+var gusto_qt = 0
+var  totalpag = camisa_rs + short_rs + argo_rs + deus_rs + alfa_rs + gusto_rs
 function carroa(){
     if (document.getElementById("carrinho1").style.display != 'block'){
         document.getElementById("carrinho1").style.display = 'block'
     }
-    short_rs = 30.00
+    totalpag =  short_rs + camisa_rs +argo_rs + deus_rs + alfa_rs + gusto_rs
+    short_rs = 15.00
     short_qt -= 1
-    totalpag = camisa_rs + argo_rs + short_rs
     click += 1
     document.getElementById("vlfinal").innerHTML = "<span>Total: R$"+ totalpag + ",00</span>"
     document.getElementById("cart1").style.display = 'block'
@@ -28,7 +34,7 @@ function carrob(){
     }
     camisa_qt += 1
     camisa_rs += 5.00
-    totalpag += 5.00
+    totalpag = short_rs + camisa_rs +argo_rs + deus_rs + alfa_rs + gusto_rs
     click  += 1
     document.getElementById("vlfinal").innerHTML = "<span>Total: R$"+ totalpag + ",00</span>"
     document.getElementById("cart2").style.display = 'block'
@@ -53,7 +59,7 @@ function carroc(){
     }
     argo_qt -= 1
     argo_rs = 20.00
-    totalpag = camisa_rs + short_rs + argo_rs
+    totalpag = camisa_rs + short_rs + argo_rs + deus_rs +  + gusto_rs
     click += 1
     document.getElementById("vlfinal").innerHTML = "<span>Total: R$"+ totalpag + ",00</span>"
     document.getElementById("cart3").style.display = 'block'
@@ -62,9 +68,60 @@ function carroc(){
         click = 0
     }
 }
+function carrod(){
+    if (document.getElementById("carrinho4").style.display != 'block'){
+        document.getElementById("carrinho4").style.display = 'block'
+    }
+    deus_qt -= 1
+    deus_rs = 3
+    totalpag = camisa_rs + short_rs + argo_rs + deus_rs + alfa_rs + gusto_rs
+    click += 1
+    document.getElementById("vlfinal").innerHTML = "<span>Total: R$"+ totalpag + "0</span>"
+    document.getElementById("cart4").style.display = 'block'
+    if (click >= 1){
+        document.getElementById("carrinho4").innerHTML = `<span>Oque Deus exige e o que ele oferece</span><span>R$${deus_rs},00</span><span> 1</span>`
+        click = 0
+    }
+    if (deus_qt > 1){
+        document.getElementById("carrinho4").innerHTML = `<span>Não temos mais unidades.</span>`
+    }
+}
+function carroe(){
+    if (document.getElementById("carrinho5").style.display != 'block'){
+        document.getElementById("carrinho5").style.display = 'block'
+    }
+    alfa_qt -= 1
+    alfa_rs = 40
+    totalpag = camisa_rs + short_rs + argo_rs + deus_rs + alfa_rs  + gusto_rs
+    click += 1
+    document.getElementById("vlfinal").innerHTML = "<span>Total: R$"+ totalpag + ",00</span>"
+    document.getElementById("cart5").style.display = 'block'
+    if (click >= 1){
+        document.getElementById("carrinho5").innerHTML = `<span>Alfaletrar</span><span>R$${alfa_rs},00</span><span>1</span>`
+        click = 0
+    }
+    if (deus_qt > 1){
+        document.getElementById("carrinho4").innerHTML = `<span>Não temos mais unidades.</span>`
+    }
+}
+function carrof(){
+    if (document.getElementById("carrinho6").style.display != 'block'){
+        document.getElementById("carrinho6").style.display = 'block'
+    }
+    gusto_qt -= 1
+    gusto_rs = 25
+    totalpag = camisa_rs + short_rs + argo_rs + deus_rs + alfa_rs + gusto_rs
+    click += 1
+    document.getElementById("vlfinal").innerHTML = "<span>Total: R$"+ totalpag + ",00</span>"
+    document.getElementById("cart6").style.display = 'block'
+    if (click >= 1){
+        document.getElementById("carrinho6").innerHTML = `<span>12 semanas para mudar uma vida</span><span>R$${gusto_rs},00</span><span>1</span>`
+        click = 0
+    }
+}
 function removecra(){
     short_qt += 1
-    totalpag -= 30.00
+    totalpag -= 15.00
     document.getElementById("vlfinal").innerHTML = "<span>Total:R$"+ totalpag + ",00</span>"
     if (short_qt < 1){
         document.getElementById("carrinho1").style.display = 'none'
@@ -96,6 +153,45 @@ function removecrc(){
         argo_qt = 0
         document.getElementById("cart3").style.display ='none'
     }
+    
+
+}
+function removecrd(){
+    deus_qt  = 0 
+    totalpag -= 2.5
+    if (deus_qt == 0){
+        document.getElementById("carrinho4").style.display = 'none'
+        document.getElementById("cart4").style.display ='none'
+    }
+    document.getElementById("carrinho4").innerHTML = `<span>Oque Deus exige e oque ele oferece</span><span>R$${deus_rs -= 2.5},00</span><span>0</span>`
+    document.getElementById("vlfinal").innerHTML = "<span> Total:R$"+ totalpag + "</span>"
+    
+    
+
+}
+function removecre(){
+    alfa_qt  = 0 
+    totalpag -= 40
+    if (alfa_qt == 0){
+        document.getElementById("carrinho5").style.display = 'none'
+        document.getElementById("cart5").style.display ='none'
+    }
+    document.getElementById("carrinho5").innerHTML = `<span>Alfaletrar</span><span>R$${alfa_rs},00</span><span>0</span>`
+    document.getElementById("vlfinal").innerHTML = "<span> Total:R$"+ totalpag + "</span>"
+    
+    
+
+}
+function removecrf(){
+    gusto_qt  = 0 
+    totalpag -= 25
+    if (alfa_qt == 0){
+        document.getElementById("carrinho6").style.display = 'none'
+        document.getElementById("cart6").style.display ='none'
+    }
+    document.getElementById("carrinho6").innerHTML = `<span>12 semanas para mudar</span><span>R$${gusto_rs},00</span><span>0</span>`
+    document.getElementById("vlfinal").innerHTML = "<span> Total:R$"+ totalpag + "</span>"
+    
     
 
 }
