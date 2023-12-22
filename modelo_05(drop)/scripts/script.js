@@ -12,12 +12,18 @@ var alfa_qt = 0
 var alfa_rs = 0
 var gusto_rs = 0
 var gusto_qt = 0
-var  totalpag = camisa_rs + short_rs + argo_rs + deus_rs + alfa_rs + gusto_rs
+var blind_qt = 0
+var blind_rs = 0
+var mike_rs = 0
+var mike_qt = 0
+var banana_rs = 0
+var banana_qt = 0
+var  totalpag = camisa_rs + short_rs + argo_rs + deus_rs + alfa_rs + gusto_rs + blind_rs + mike_rs + banana_rs
 function carroa(){
     if (document.getElementById("carrinho1").style.display != 'block'){
         document.getElementById("carrinho1").style.display = 'block'
     }
-    totalpag =  short_rs + camisa_rs +argo_rs + deus_rs + alfa_rs + gusto_rs
+    totalpag =  short_rs + camisa_rs +argo_rs + deus_rs + alfa_rs + gusto_rs + blind_rs + mike_rs + banana_rs
     short_rs = 15.00
     short_qt -= 1
     click += 1
@@ -34,7 +40,7 @@ function carrob(){
     }
     camisa_qt += 1
     camisa_rs += 5.00
-    totalpag = short_rs + camisa_rs +argo_rs + deus_rs + alfa_rs + gusto_rs
+    totalpag = short_rs + camisa_rs +argo_rs + deus_rs + alfa_rs + gusto_rs + blind_rs + mike_rs + banana_rs
     click  += 1
     document.getElementById("vlfinal").innerHTML = "<span>Total: R$"+ totalpag + ",00</span>"
     document.getElementById("cart2").style.display = 'block'
@@ -59,7 +65,7 @@ function carroc(){
     }
     argo_qt -= 1
     argo_rs = 20.00
-    totalpag = camisa_rs + short_rs + argo_rs + deus_rs +  + gusto_rs
+    totalpag = camisa_rs + short_rs + argo_rs + deus_rs + alfa_rs + gusto_rs + blind_rs + mike_rs + banana_rs
     click += 1
     document.getElementById("vlfinal").innerHTML = "<span>Total: R$"+ totalpag + ",00</span>"
     document.getElementById("cart3").style.display = 'block'
@@ -74,7 +80,7 @@ function carrod(){
     }
     deus_qt -= 1
     deus_rs = 3
-    totalpag = camisa_rs + short_rs + argo_rs + deus_rs + alfa_rs + gusto_rs
+    totalpag = camisa_rs + short_rs + argo_rs + deus_rs + alfa_rs + gusto_rs + blind_rs + mike_rs + banana_rs
     click += 1
     document.getElementById("vlfinal").innerHTML = "<span>Total: R$"+ totalpag + "0</span>"
     document.getElementById("cart4").style.display = 'block'
@@ -92,7 +98,7 @@ function carroe(){
     }
     alfa_qt -= 1
     alfa_rs = 40
-    totalpag = camisa_rs + short_rs + argo_rs + deus_rs + alfa_rs  + gusto_rs
+    totalpag = camisa_rs + short_rs + argo_rs + deus_rs + alfa_rs  + gusto_rs + blind_rs + mike_rs + banana_rs
     click += 1
     document.getElementById("vlfinal").innerHTML = "<span>Total: R$"+ totalpag + ",00</span>"
     document.getElementById("cart5").style.display = 'block'
@@ -110,12 +116,72 @@ function carrof(){
     }
     gusto_qt -= 1
     gusto_rs = 25
-    totalpag = camisa_rs + short_rs + argo_rs + deus_rs + alfa_rs + gusto_rs
+    totalpag = camisa_rs + short_rs + argo_rs + deus_rs + alfa_rs + gusto_rs + blind_rs + mike_rs + banana_rs
     click += 1
     document.getElementById("vlfinal").innerHTML = "<span>Total: R$"+ totalpag + ",00</span>"
     document.getElementById("cart6").style.display = 'block'
     if (click >= 1){
         document.getElementById("carrinho6").innerHTML = `<span>12 semanas para mudar uma vida</span><span>R$${gusto_rs},00</span><span>1</span>`
+        click = 0
+    }
+}
+function carrog(){
+    if (document.getElementById("carrinho7").style.display != 'block'){
+        document.getElementById("carrinho7").style.display = 'block'
+    }
+    blind_qt -= 1
+    blind_rs = 19
+    totalpag = camisa_rs + short_rs + argo_rs + deus_rs + alfa_rs + gusto_rs + blind_rs + mike_rs + banana_rs
+    click += 1
+    document.getElementById("vlfinal").innerHTML = "<span>Total: R$"+ totalpag + ",00</span>"
+    document.getElementById("cart7").style.display = 'block'
+    if (click >= 1){
+        document.getElementById("carrinho7").innerHTML = `<span>Namoro Blindado</span><span>R$${blind_rs},00</span><span>1</span>`
+        click = 0
+    }
+}
+function carroh(){
+    if (document.getElementById("carrinho7").style.display != 'block'){
+        document.getElementById("carrinho7").style.display = 'block'
+    }
+    blind_qt -= 1
+    blind_rs = 19
+    totalpag = camisa_rs + short_rs + argo_rs + deus_rs + alfa_rs + gusto_rs + blind_rs + mike_rs + banana_rs
+    click += 1
+    document.getElementById("vlfinal").innerHTML = "<span>Total: R$"+ totalpag + ",00</span>"
+    document.getElementById("cart7").style.display = 'block'
+    if (click >= 1){
+        document.getElementById("carrinho7").innerHTML = `<span>Namoro Blindado</span><span>R$${blind_rs},00</span><span>1</span>`
+        click = 0
+    }
+}
+function carroi(){
+    if (document.getElementById("carrinho8").style.display != 'block'){
+        document.getElementById("carrinho8").style.display = 'block'
+    }
+    mike_qt -= 1
+    mike_rs = 25
+    totalpag = camisa_rs + short_rs + argo_rs + deus_rs + alfa_rs + gusto_rs + blind_rs + mike_rs + banana_rs
+    click += 1
+    document.getElementById("vlfinal").innerHTML = "<span>Total: R$"+ totalpag + ",00</span>"
+    document.getElementById("cart8").style.display = 'block'
+    if (click >= 1){
+        document.getElementById("carrinho8").innerHTML = `<span>As aventuras de mike</span><span>R$${mike_rs},00</span><span>1</span>`
+        click = 0
+    }
+}
+function carroj(){
+    if (document.getElementById("carrinho9").style.display != 'block'){
+        document.getElementById("carrinho9").style.display = 'block'
+    }
+    banana_qt -= 1
+    banana_rs = 15
+    totalpag = camisa_rs + short_rs + argo_rs + deus_rs + alfa_rs + gusto_rs + blind_rs + mike_rs + banana_rs
+    click += 1
+    document.getElementById("vlfinal").innerHTML = "<span>Total: R$"+ totalpag + ",00</span>"
+    document.getElementById("cart9").style.display = 'block'
+    if (click >= 1){
+        document.getElementById("carrinho9").innerHTML = `<span>Diario de um banana 3</span><span>R$${banana_rs},00</span><span>1</span>`
         click = 0
     }
 }
@@ -185,11 +251,47 @@ function removecre(){
 function removecrf(){
     gusto_qt  = 0 
     totalpag -= 25
-    if (alfa_qt == 0){
+    if (gusto_qt == 0){
         document.getElementById("carrinho6").style.display = 'none'
         document.getElementById("cart6").style.display ='none'
     }
     document.getElementById("carrinho6").innerHTML = `<span>12 semanas para mudar</span><span>R$${gusto_rs},00</span><span>0</span>`
+    document.getElementById("vlfinal").innerHTML = "<span> Total:R$"+ totalpag + "</span>"
+    
+    
+
+}
+function removecrg(){
+    blind_qt  = 0 
+    totalpag -= 19
+    if (blind_qt == 0){
+        document.getElementById("carrinho7").style.display = 'none'
+        document.getElementById("cart7").style.display ='none'
+    }
+    document.getElementById("carrinho7").innerHTML = `<span>Namoro Blindado</span><span>R$${blind_rs_rs},00</span><span>0</span>`
+    document.getElementById("vlfinal").innerHTML = "<span> Total:R$"+ totalpag + "</span>"
+    
+    
+
+}
+function removecri(){
+    mike_qt  = 0 
+    totalpag -= 25
+    if (mike_qt == 0){
+        document.getElementById("carrinho8").style.display = 'none'
+        document.getElementById("cart8").style.display ='none'
+    }
+    document.getElementById("carrinho8").innerHTML = `<span>As aventuras de mike</span><span>R$${mike_rs},00</span><span>0</span>`
+    document.getElementById("vlfinal").innerHTML = "<span> Total:R$"+ totalpag + "</span>"
+}
+function removecrj(){
+    banana_qt  = 0 
+    totalpag -= 15
+    if (banana_qt == 0){
+        document.getElementById("carrinho9").style.display = 'none'
+        document.getElementById("cart9").style.display ='none'
+    }
+    document.getElementById("carrinho9").innerHTML = `<span>Diario de um banana 3</span><span>R$${banana_rs},00</span><span>0</span>`
     document.getElementById("vlfinal").innerHTML = "<span> Total:R$"+ totalpag + "</span>"
     
     
