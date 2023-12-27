@@ -44,7 +44,7 @@ function carrob(){
     click  += 1
     document.getElementById("vlfinal").innerHTML = "<span>Total: R$"+ totalpag + ",00</span>"
     document.getElementById("cart2").style.display = 'block'
-    if (camisa_qt < 4){
+    if (camisa_qt <= 4){
         if (click >= 1){
             document.getElementById("carrinho2").innerHTML = `<span>O Grande Conflito</span><span>R$${camisa_rs},00</span><span>${camisa_qt}</span>`
             click = 0
@@ -187,6 +187,7 @@ function carroj(){
 }
 function removecra(){
     short_qt += 1
+    short_rs -= 15.00
     totalpag -= 15.00
     document.getElementById("vlfinal").innerHTML = "<span>Total:R$"+ totalpag + ",00</span>"
     if (short_qt < 1){
@@ -198,8 +199,9 @@ function removecra(){
 }
 function removecrb(){
     camisa_qt -= 1
+    camisa_rs -= 5.00
     totalpag -= 5.00
-    document.getElementById("carrinho2").innerHTML = `<span>O Grande Conflito</span><span>R$${camisa_rs -= 5.00},00</span><span>${camisa_qt}</span>`
+    document.getElementById("carrinho2").innerHTML = `<span>O Grande Conflito</span><span>R$${camisa_rs},00</span><span>${camisa_qt}</span>`
     document.getElementById("vlfinal").innerHTML = "<span> Total:R$"+ totalpag + ",00</span>"
     if (camisa_qt < 1){
         document.getElementById("carrinho2").style.display = 'none'
@@ -211,6 +213,7 @@ function removecrb(){
 }
 function removecrc(){
     argo_qt -= 1
+    argo_rs -= 20
     totalpag -= 20.00
     document.getElementById("carrinho3").innerHTML = `<span>Arganel(s)</span><span>R$${argo_rs -= 20.00},00</span><span>${argo_qt}</span>`
     document.getElementById("vlfinal").innerHTML = "<span> Total:R$"+ totalpag + ",00</span>"
@@ -224,6 +227,7 @@ function removecrc(){
 }
 function removecrd(){
     deus_qt  = 0 
+    deus_rs -= 2.5
     totalpag -= 2.5
     if (deus_qt == 0){
         document.getElementById("carrinho4").style.display = 'none'
@@ -237,6 +241,7 @@ function removecrd(){
 }
 function removecre(){
     alfa_qt  = 0 
+    alfa_rs -= 40
     totalpag -= 40
     if (alfa_qt == 0){
         document.getElementById("carrinho5").style.display = 'none'
@@ -250,6 +255,7 @@ function removecre(){
 }
 function removecrf(){
     gusto_qt  = 0 
+    gusto_rs -= 25
     totalpag -= 25
     if (gusto_qt == 0){
         document.getElementById("carrinho6").style.display = 'none'
@@ -263,12 +269,13 @@ function removecrf(){
 }
 function removecrg(){
     blind_qt  = 0 
+    blind_rs -= 19
     totalpag -= 19
     if (blind_qt == 0){
         document.getElementById("carrinho7").style.display = 'none'
         document.getElementById("cart7").style.display ='none'
     }
-    document.getElementById("carrinho7").innerHTML = `<span>Namoro Blindado</span><span>R$${blind_rs_rs},00</span><span>0</span>`
+    document.getElementById("carrinho7").innerHTML = `<span>Namoro Blindado</span><span>R$${blind_rs},00</span><span>0</span>`
     document.getElementById("vlfinal").innerHTML = "<span> Total:R$"+ totalpag + "</span>"
     
     
@@ -276,6 +283,7 @@ function removecrg(){
 }
 function removecri(){
     mike_qt  = 0 
+    mike_rs -= 25
     totalpag -= 25
     if (mike_qt == 0){
         document.getElementById("carrinho8").style.display = 'none'
@@ -285,20 +293,73 @@ function removecri(){
     document.getElementById("vlfinal").innerHTML = "<span> Total:R$"+ totalpag + "</span>"
 }
 function removecrj(){
-    banana_qt  = 0 
+    banana_qt  = 0
+    banana_rs -= 15 
     totalpag -= 15
     if (banana_qt == 0){
         document.getElementById("carrinho9").style.display = 'none'
         document.getElementById("cart9").style.display ='none'
     }
     document.getElementById("carrinho9").innerHTML = `<span>Diario de um banana 3</span><span>R$${banana_rs},00</span><span>0</span>`
-    document.getElementById("vlfinal").innerHTML = "<span> Total:R$"+ totalpag + "</span>"
+    document.getElementById("vlfinal").innerHTML = "<span> Total:R$"+ totalpag + ",00</span>"
     
     
 
 }
+function removeall(){
+    document.getElementById("carrinho1").style.display = 'none'
+    document.getElementById("carrinho2").style.display = 'none'
+    document.getElementById("carrinho3").style.display = 'none'
+    document.getElementById("carrinho4").style.display = 'none'
+    document.getElementById("carrinho5").style.display = 'none'
+    document.getElementById("carrinho6").style.display = 'none'
+    document.getElementById("carrinho7").style.display = 'none'
+    document.getElementById("carrinho8").style.display = 'none'
+    document.getElementById("carrinho9").style.
+    display = 'none'
+    totalpag -= camisa_rs + short_rs + argo_rs + deus_rs + alfa_rs + gusto_rs + blind_rs + mike_rs + banana_rs
+    
+    
+    document.getElementById("vlfinal").innerHTML = "<span> Total:R$0,00</span>"
+    document.getElementById("cart1").style.display = 'none'
+    document.getElementById("cart2").style.display = 'none'
+    document.getElementById("cart3").style.display = 'none'
+    document.getElementById("cart4").style.display = 'none'
+    document.getElementById("cart5").style.display = 'none'
+    document.getElementById("cart6").style.display = 'none'
+    document.getElementById("cart7").style.display = 'none'
+    document.getElementById("cart8").style.display = 'none'
+    document.getElementById("cart9").style.display = 'none'
+    if (camisa_rs != 0){
+        camisa_rs -= 5
+    }
+    if (short_rs != 0){
+        short_rs -= 15
+    }
+    if (argo_rs != 0){
+        argo_rs -= 20
+    }
+    if (deus_rs != 0){
+        deus_rs -= 3
+    }
+    if (alfa_rs != 0){
+        deus_rs -= 40
+    }
+    if (gusto_rs != 0){
+        gusto_rs -= 25
+    }
+    if (blind_rs != 0){
+        blind_rs -= 19
+    }
+    if (mike_rs != 0){
+        mike_rs -= 25
+    }
+    if (banana_rs != 0){
+        banana_rs -= 15
+    }
+}
 function verificar1(){
-    if(short_qt == 0 && camisa_qt == 0 && argo_qt == 0){
+    if(totalpag == 0){
         window.alert("Adcione ao carrinho pelo menos 1 produto,para finalizar a compra")
     }
     if (document.getElementById("endereço").value == ""){
@@ -306,7 +367,7 @@ function verificar1(){
     }
 }
 function verificar2(){
-    if(short_qt == 0 && camisa_qt == 0 && argo_qt == 0){
+    if(totalpag == 0){
         window.alert("Adcione ao carrinho pelo menos 1 produto,para finalizar a compra")
     }
     if (document.getElementById("bairro").value == ""){
@@ -314,7 +375,7 @@ function verificar2(){
     }
 }
 function verificar3(){
-    if(short_qt == 0 && camisa_qt == 0 && argo_qt == 0){
+    if(totalpag == 0){
         window.alert("Adcione ao carrinho pelo menos 1 produto,para finalizar a compra")
     }
     if (document.getElementById("nome").value == ""){

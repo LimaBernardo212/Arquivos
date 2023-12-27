@@ -107,7 +107,7 @@ span{
 }
 article#car{
     background-color: rgba(55, 41, 145, 0.2);
-    max-width: 70vw;
+    max-width: 95vw;
     padding: 10px;
     font-size: 18px;
     margin: 20px  auto;
@@ -257,4 +257,11 @@ strong{
 }
 #cart9{
     display: none;
+}
+#removeallitens{
+    height: 40px;
+}
+#cartr{
+    display: inline-flex;
+    justify-content: space-around;
 }
