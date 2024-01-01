@@ -3,152 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DBV mania 2.com</title>
+    <title>Shopping</title>
     <link rel="stylesheet" href="style/style.css">
-    <link rel="shortcut icon" href="images/icone.png" type="image/x-icon">
 </head>
-<script src="scripts/script.js">
-</script>
 <body>
+    <nav id="Carrinho">
+        <span>
+            <a href=""><img src="images/Vitrineicon.png" alt="" id="ride"></a>
+        </span><!--Position = sticky-->
+        <span>
+            <a href="#jogos">Jogos</a>
+        </span>
+        <span> 
+            <a href="#Livros">Livros</a>
+        </span>
+        <span>
+            <a href="#roupas">Roupas</a>
+        </span>
+        <span>
+            <a href="#Carrinho">Carrinho</a>
+        </span>
+    </nav>
     <header>
-            <h1 id="prc">VITRINE</h1>
+        <picture>
+            <source media="(max-width: 500px)" srcset="images/Vitrinepp.png" type="image/png">
+            <source media="(max-width: 780px)" srcset="images/Vitrine.png" type="image/png">
+            <source media="(max-width: 830px)" srcset="images/Vitrinepp.png" type="image/png">
+            <source media="(max-width: 970px)" srcset="images/Vitrinep.png" type="image/png">
+            <img src="images/Vitrine.png" alt="">
+        </picture>
+        <section id="ride">
+            
+            <h2><strong>Seja</strong> bem <strong>vindo</strong> a Shop<strong>ping</strong></h2>
+            <p>Usados <strong>podem</strong> sim, <strong>ser</strong> novos <strong>denovo.</strong></p>
+        </section>
         
-        <nav>
-            <span><a href="index.html">Loja</a></span><span><a href="shorts.html">Shorts</a></span>
-            <span><a href="camisas.html">Camisas</a></span>
-            <span><a href="#car">Carrinho</a></span>
-        </nav>
     </header>
     <main>
-        <article id="compras">
-            <section class="pdt">
-                <img src="images/5linguagemdoamor.jpg" alt="No image" id="noi">
-                <h2>As 5 Linguagens do amor</h2>
-                <h3><del>R$25,00</del> R$15,00</h3>
-                <p> 1 unidade.Produto com qualidade equivalente a livros de biblioteca, escrito por Gary Chapman , o livro mostra por que só nos sentiremos realmente amados e compreendidos quando a pessoa amada nos expressar seu amor através de nossa linguagem única. </p>
-                <a href="#compras" onclick="carroa()">Adicionar ao carrinho</a>
-                <a href="#compras" id="cart1" onclick="removecra()">Remover do carrinho</a>
-                
-                
-            </section>
-            <section class="pdt">
-
-                <img src="images/ogangconflito.jpg" alt="No image" id="noi">
-                <h2>O grande conflito 13° edição</h2>
-                <h3>R$5,00</h3>
-                <p>4 unidades, uma delas com um texto especial.De Elen white. No grande conflito entre o bem e o mal, parece que o mal se sobresaiu. As notícias são desanimadoras - violência, fome, desemprego, doenças, acidentes e outras calamidades estão na ordem do dia. Os meios de comunicação podem lhe dizer o que está acontecendo. </p>
-                <a href="#cart1" onclick="carrob()">Adicionar ao carrinho</a>
-                <a href="#cart1" id="cart2" onclick="removecrb()">Remover do carrinho</a>
-            </section>
-            <section class="pdt">
-                <img src="images/onepiecevl10.jpg" alt="No image" id="noi">
-                <h2>One Piece vol. 10</h2>
-                <h3>R$20,00</h3>
-                <p>De Eichiro Oda,Finalmente Nami deixa o orgulho de lado e pede ajuda ao Luffy!Entretanto, a luta contra o bando do Arlong não dará moleza!</p>
-                <a href="#cart2" onclick="carroc()">Adicionar ao carrinho</a>
-                <a href="#cart2"  id="cart3" onclick="removecrc()">Remover do carrinho</a>
-            </section>
-            <section class="pdt">
-                <img src="images/oq d exige e oq oferece.jpg" alt="" id="noit">
-                <h2>Oque Deus exige e o oque ele oferece</h2>
-                <h3>R$3,00</h3>
-                <p>O cuidado que o senhor tem com os Seus filhos è tão grande que não podemos dimensiona-lo.  Como compreender a profundidade do amor de Deus, que entregou Jesus para morrer na cruz em nosso lugar?</p>
-                <a href="#cart3" onclick="carrod()">Adicionar ao carrinho</a>
-                <a href="#cart3"  id="cart4" onclick="removecrd()">Remover do carrinho</a>
-            </section>
-            <section class="pdt">
-                <img src="images/alfaletrar.jpg" alt="" id="noi">
-                <h2>Alfaletrar</h2>
-                <h3>R$40,00</h3>
-                <p>De Magda Soares.
-                Ao longo de seis capítulos, a autora expõe, em detalhes, um projeto de alfabetização e letramento bem-sucedido na prática, que contraria todas as estatísticas. Apresenta atividades realizadas e observadas por ela em sala de aula e explica como tudo isso pode ser aplicado por todos os envolvidos em um objetivo comum e fundamental: uma educação verdadeiramente democratizada no nosso país.
-                Livro essencial para educadores, professores, pedagogos e todos os interessados em defender o direito à educação de qualidade.</p>
-                <a href="#cart4" onclick="carroe()">Adicionar ao carrinho</a>
-                <a href="#cart4"  id="cart5" onclick="removecre()">Remover do carrinho</a>
-            </section>
-            <section class="pdt">
-                <img src="images/12 semanas para mudar.jpg" alt="" id="noi">
-                <h2>12 semanas para mudar uma vida</h2>
-                <h3>R$25,00</h3>
-                <p>Imagine um programa que tenha ferramentas psicológicasque contribuam para educar a emoção, vencer o estresse e prevenira ansiedade, depressão e outros transtornos psíquicos.Imagine um programa que contribua para resolver conflitossociais, decepções e construir belíssimas relações entre pais efilhos, professores e alunos e colegas de trabalho.</p>
-                <a href="#cart5" onclick="carrof()">Adicionar ao carrinho</a>
-                <a href="#cart5"  id="cart6" onclick="removecrf()">Remover do carrinho</a>
-            </section>
-            <section class="pdt">
-                <img src="images/namoroblindado.jpg" alt="" id="noi">
-                <h2>Namoro Blindado</h2>
-                <h3>R$19,00</h3>
-                <p>O manual do século 21 para antes, durante e depois de namorar.Imagine acordar um dia e descobrir que se casou com a pessoa errada. Ou perder o seu grande amor porque você estragou o relacionamento com suas próprias mãos. Ou não perceber aquela pessoa especial quando ela passar por sua vida. Para quem não quer gastar o resto da vida lamentando uma péssima decisão, Namoro Blindado é leitura obrigatória.Qualquer que seja a sua fase de solteiro ― se está só, esperando, paquerando, ficando, namorando, catando os pedaços do seu coração, divorciado, viúvo ou enrolado ― este livro ajudará você a se situar para não se perder no mundo cada vez mais complicado dos relacionamentos modernos.</p>
-                <a href="#cart5" onclick="carrog()">Adicionar ao carrinho</a>
-                <a href="#cart5"  id="cart7" onclick="removecrg()">Remover do carrinho</a>
-            </section>
-            <section class="pdt">
-                <img src="images/asaventuramike.jpg" alt="" id="noi">
-                <h2>As aventuras de Mike</h2>
-                <h3>R$25,00</h3>
-                <p>Na vida de Mike acontecem coisas bem estranhas. (É sério!)
-
-                    Da última vez caiu um meteorito em sua casa. (Quais as chances?)
-                    
-                    Agora, Mike e sua família estão em busca de uma nova casa.
-                    
-                    Sim, eles vão se mudar! E com isso surgem muitos desafios, como:
-                    
-                    * Empacotar tudo em caixas de papelão.
-                    
-                    * Encontrar um caminhão para levar as coisas.
-                    
-                    * Descobrir um jeito de levar uma capivara na mudança.
-                    
-                    Mike e a priminha irritante estão muito empolgados, mas...
-                    
-                    Será que eles vão conseguir a casa perfeita?
-                    
-                    E, na escola, Nando tem um ideia que surpreende seu professor. (Por essa o Mike não esperava!)</p>
-                <a href="#cart5" onclick="carroi()">Adicionar ao carrinho</a>
-                <a href="#cart5"  id="cart8" onclick="removecri()">Remover do carrinho</a>
-                </section>
-                <section class="pdt">
-                    <img src="images/diariodebananaga.jpg" alt="" id="noi">
-                    <h2>Diario de um banana Gota D'Água</h2>
-                    <h3>R$15,00</h3>
-                    <p>Greg não toma jeito mesmo. E a cada dia se envolve em mais confusão. O difícil é fazer seu pai engolir esse talento de Greg para se meter em situações embaraçosas. Ele já está por aqui com o garoto. E para botar algum juízo na cabeça dele, Frank Heffley tenta de tudo um pouco. É claro que Greg sempre encontra uma maneira de estragar tudo. Até que seu pai faz uma grande ameaça e as coisas mudam de figura. Qual será a gota d'água que vai fazer a paciência de Frank transbordar de vez?
-                    </p>
-                    <a href="#cart5" onclick="carroj()">Adicionar ao carrinho</a>
-                    <a href="#cart5"  id="cart9" onclick="removecrj()">Remover do carrinho</a>
-                </section>
-        </article>
-        <h2>Carrinho</h2>
-            <article id="car">
-                <span>Produtos</span><span>Preço</span><span>Quantidade</span>
-                <br>
-                
-                <section id="carrinho1"></section>
-                <section id="carrinho2"></section>
-                <section id="carrinho3"></section>
-                <section id="carrinho4"></section>
-                <section id="carrinho5"></section>
-                <section id="carrinho6"></section>
-                <section id="carrinho7"></section>
-                <section id="carrinho8"></section>
-                <section id="carrinho9"></section>
-            </article>
-           
-               <section id="vlfinal">Total:R$0,00</section> <button type="button" id="removeallitens" onclick="removeall()">Remover todos os itens</button>
+        <section>
+            
+                <h1>Selecionados <strong>para </strong>você</h1>
+                <div>
+                <a href="#ride"><img src="images/onepiecevl10.jpg" alt=""></a>
+                <a href="#ride"><img src="images/ogangconflito.jpg" alt=""></a>
+                <a href="#ride"><img src="images/diariodebananaga.jpg" alt=""></a>
+            </div>
+        </section>
+        <section>
+            <h1>Livros <strong>em</strong> melhores<strong> condições</strong></h1>
+            <div>
+                <a href=""><img src="images/guerrasecreta.jpg" alt=""></a>
+                <a href=""><img src="images/5linguagemdoamor.jpg" alt=""></a>
+                <a href=""><img src="images/alfaletrar.jpg" alt=""></a>
+                <a href=""><img src="images/asaventuramike.jpg" alt=""></a>
+                <a href=""><img src="images/namoroblindado.jpg" alt=""></a>
+                <a href=""><img src="images/banana.jpg" alt=""></a>
+                <a href=""><img src="images/dias de cão.jpg" alt=""></a>
+                <a href=""><img src="images/3em 1.jpg" alt=""></a>
+            </div>
+            <a href="" id="anc">Todos os livros</a>
+        </section>
+        <section>
+            <h1><strong>Jogos</strong> das <strong>antigas </strong>gerações</h1>
+            <div>
+                <a href=""><img src="images/Lorem img.png" alt="" class="lorem"></a>
+                <a href=""><img src="images/Lorem img.png" alt="" class="lorem"></a>
+                <a href=""><img src="images/Lorem img.png" alt="" class="lorem"></a>
+                <a href=""><img src="images/Lorem img.png" alt="" class="lorem"></a>
+            </div>
+        </section>
     </main>
-        
-        <form action="https://formsubmit.co/bernardolimarodrigues4@gmail.com" method="post" id="form">
-            <label for="end">Endereço</label>
-            <input type="text" name="endereço" id="endereço" placeholder="Endereço">
-            <p id="endereço">
-            </p>
-            <label for="bairro">Bairro</label>
-            <input type="text" name="bairro" id="bairro" placeholder="Bairro" onclick="verificar1()">
-            <label for="name">Nome</label>
-            <input type="text" name="nome" id="nome" autocomplete="off" placeholder="Nome" onclick="verificar2()">
-            <button type="submit" onmousedown="verificar3()">Enviar pedido</button>
-            <input type="hidden" name="_captcha" value="false">
-        </form>
-        <button type="button" id="button">Finalizar compra(s)</button>
+    <footer>
+        <img src="images/pix.png" alt="">
+        <p><strong>Todos</strong> os <strong>direitos</strong> reservados <strong>a</strong> Shop<strong>ping</strong></p>
+    </footer>
 </body>
-</html>                                                                                                                                                                                                       
+</html>
