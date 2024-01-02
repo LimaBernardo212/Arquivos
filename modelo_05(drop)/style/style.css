@@ -34,14 +34,12 @@ nav{
     position: sticky;
     top: 0px;
     padding: 10px;
-    margin: -10px -10px 10px -10px;
+    margin: -10px -75px 10px -10px;
     background-color: white;
     box-shadow: 1px 1px 1px 1px solid;
-    width: 98vw;
 }
 span{
-    margin-left: 20px;
-    margin-right: 5px;
+    margin-left: 10px;
 }
 a{
     font-family: "Roboto", sans-serif;
@@ -59,7 +57,6 @@ a:hover{
 section{
     text-align: center;
     font-family: "Roboto", sans-serif;
-    
     overscroll-behavior-inline: contain;
 }
 section > h1{
@@ -67,11 +64,12 @@ section > h1{
 }
 section img{
     height: 150px;
-    margin-left: 75px;
+    margin-left: 25px;
 }
 div{
     background-color: rgba(0, 0, 0, 0.850);
     padding: 25px;
+    width: 100vw;
     margin-left: -10px;
     margin-right: -10px;
 }
