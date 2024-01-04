@@ -32,6 +32,7 @@ header img{
 }
 nav{
     position: sticky;
+    
     top: 0px;
     padding: 10px;
     margin: -10px -18px 30px -10px;
@@ -39,7 +40,11 @@ nav{
     box-shadow: 1px 1px 1px 1px solid;
 }
 nav span{
+    display: inline-flex;
     margin-left: 20px;
+}
+.bount{
+    margin-left: 2px;
 }
 a{
     font-family: "Roboto", sans-serif;
@@ -160,4 +165,9 @@ button{
 button:hover{
     background-color: #2274a3;
     cursor: pointer;
+}
+.edition{
+    text-align: justify;
+    margin-left: 60px;
+    
 }
