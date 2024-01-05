@@ -32,8 +32,8 @@ header img{
 }
 nav{
     position: sticky;
-    
     top: 0px;
+    width: 100vw;
     padding: 10px;
     margin: -10px -18px 30px -10px;
     background-color: white;
@@ -67,8 +67,8 @@ section{
 section > h1{
     text-decoration: overline;
 }
-section img{
-    height: 150px;
+section  > div > a > img{
+    height: 120px;
     margin-left: 25px;
 }
 section > a{
@@ -78,7 +78,7 @@ div{
     text-align: center;
     background-color: rgba(0, 0, 0, 0.850);
     padding: 25px 5px;
-    width: 99vw;
+    width: 100vw;
     margin-left: -10px;
     margin-right: -10px;
 }
@@ -126,7 +126,6 @@ footer strong{
     color: rgba(250, 235, 215, 0.493);
 }
 .img{
-    height: 400px;
     margin-left: 100px;
     margin-top: -10px;
 }
@@ -136,14 +135,19 @@ footer strong{
 }
 .pdt h1{
     font-family: "Roboto Mono";
-    margin-left: 50px;
+    margin: auto;
+}
+.pdt img{
+    margin-left: 15px;
+    margin-right: 15px;
 }
 .imp{
     margin-top: -20px;
     text-align: justify;
-    margin-left: 50px;
-    max-width: 600px;
-    padding: 10px;
+    margin-left: 45px;
+    max-width: 55vw;
+    min-width: 60vw;
+    padding: 5px;
 }
 h3{
     font-size: 2em;
@@ -152,7 +156,7 @@ h3{
     margin: 50px;
 }
 button{
-    width: 400px;
+    width: 65vw;
     height: 50px;
     border-radius: 10px;
     background-color: #2c93ce;
