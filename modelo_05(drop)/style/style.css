@@ -176,5 +176,10 @@ button:hover{
     
 }
 .especial{
-    margin-left: 20px;
+    margin-left: 40px;
+}
+.cart{
+    width: 97vw;
+    height: 97vw;
+    background-color: rgba(0, 0, 0, 0);
 }
