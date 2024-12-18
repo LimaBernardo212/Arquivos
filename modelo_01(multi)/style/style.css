@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root{
-    --cor01:#f2bb16;
+    --cor01:#F1B11C;
     --cor02:#f2a71d;
     --cor03:#f29727c2;
     --cor04:#733702;
@@ -18,86 +18,88 @@ body{
     
 }
 header{
-    background-color:var(--cor01);
+    top:-1px;
     margin: -10px;
-    min-width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--cor01);
 }
-header >img{
-    width: 63px;
-    height: 63px;
-    border-radius:50%;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.356);
-
-}
-em#especial{
+#especial{
+    margin-left: -45vw;
+    font-family: var(--fontEspecial);
     font-size: 2em;
-    font-family: var(--fontEspecial),'Arial', sans-serif;
-    color: var(--cor05);
-    margin-right: 110px;
 }
-nav{
-    display: inline-flex;
-    margin-left: 10px;
-    margin-top: 10px;
-    max-width: 600px;
-    min-width: 200px;
+header > img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-left: 15px;
 }
-header > nav > a{
-    text-decoration: none;
-    font-family: var(--fontTitle);
-    font-size: 1em;
-    margin-right: 30px;
+header nav > a{
+    padding: 30px;
     color: var(--cor04);
-    transition-duration: 1s;
-}
-header > nav >a:hover{
-    text-decoration: underline;
-    color: var(--cor05);
-    padding: 3px;
-    border-radius: 5px;
-    margin: -2px 40px ;
-    
-}
-a{
+    font-family: var(--fontNormal);
     text-decoration: none;
+    font-weight: 550;
 }
-a:hover{
+header nav > a:hover{
+    font-weight: 560;
     text-decoration: underline;
-    margin: 0px 15px;
+}
+header > nav{
+    background-color: var(--cor01);
+}
+a#burguinho{
+    display: none;
+}
+a#burguinho > img{
+    width: 45%;
 }
 main > div{
-    background-color: var(--cor02);
+    display: inline-flex;
     height: 90vh;
+    width: 100vw;
     margin: 10px -10px;
-    background-image: url('../images/Areia.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
+    padding: 20px;
+    background-color: var(--cor01);
+    color: var(--cor05);
 }
 main > div > h1{
     position: absolute;
     margin-top: 200px;
     margin-left: 30px;
     text-align: start;
-    color: rgba(255, 255, 255, 0.959);
     font-size: 3em;
-    font-family: var(--fontNormal);
+    font-family: var(--fontTitle);
     font-weight: bolder;
+    background-color: var(--cor01);
     min-width: 100px;
     max-width: 750px;
 }
+#image{
+    margin-left: 50px;
+    margin-top: -30vh;
+   margin-right: 20px;
+   padding-bottom: -30vh;
+   width: 300px;
+   height: 150px;
+}
+#arial{
+    width: 350px;
+    height: 350px;
+}
 h2{
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #f297277c;
-    color: rgba(255, 255, 255, 0.171);
-    font-size: 5em;
+    color: var(--cor04);
+    font-size: 4em;
     font-family: var(--fontTitle);
     font-weight: bold;
     font-style: italic;
     margin-left: 10px;
-    max-width: 600px;
+    max-width: 80vw;
     min-width: 3px;
     padding: 10px;
     margin-bottom: 80px;
@@ -147,7 +149,7 @@ strong#aviso{
     margin-left: 20px;
 }
 strong{
-    color:#6b4311e7;
+    color:var(--cor05);
     font-weight: bolder;
 }
 article > p > a{
@@ -262,4 +264,15 @@ p.united{
     display: block;
     font-size: 1.5em;
     max-width: 500px;
+}
+.paragraf{
+    margin-top: 10px;
+}
+#going{
+    display: inline-flex;
+    width: 100vw;
+    margin-left: -10px;
+}
+#going div{
+    margin-left: 20vw;
 }
