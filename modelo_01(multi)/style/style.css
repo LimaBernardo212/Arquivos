@@ -92,6 +92,7 @@ main > div > h1{
     width: 350px;
     height: 350px;
 }
+
 h2{
     color: var(--cor04);
     font-size: 4em;
